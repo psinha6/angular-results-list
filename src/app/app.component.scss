@@ -1,0 +1,32 @@
+.result-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+@media screen and (max-width: 900px) {
+  .col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="filter-container">
+  <div class="filter">
+    <img src="assets/sorting.png" alt="">
+    <div>Sort By</div>
+    <select (change)="onChange($event)">
+        <option *ngFor="let item of this.dataList;let i = index" value="{{item.code}}" [selected]="i == 0">
+          {{item.name}}
+        </option>
+      </select>
+  </div>
+  <div class="form-group">
+    <span>n</span>
+    <input class="form-field" type="text" #input placeholder="Search for a product" />
+  </div>
+</div>

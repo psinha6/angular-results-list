@@ -1,0 +1,32 @@
+<div class="main-info-container" *ngIf="product">
+  <div class="info-container">
+    <div class="index">
+      <span class="text">Index {{product?.index}}</span>
+    </div>
+    <div class="title">
+      <img [src]="getImagePath(product)" alt="">
+      <div class="text">{{product?.title}}</div>
+    </div>
+    <div class="info">
+      <div class="tag-price-container">
+        <div class="tag">
+          <div *ngFor="let tag of product?.tags">{{tag}}</div>
+        </div>
+        <div class="price">
+          <span>Euro {{product?.price}}</span>
+        </div>
+      </div>
+      <div class="rating-details-container">
+        <div class="rating">
+          <span>Rating: {{product?.rating}}</span>
+        </div>
+        <div class="details">
+          <button type="submit" (click)="toggleDetails()">{{showDetails ? 'Hide Details' : 'Show Details'}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-description" *ngIf="showDetails">
+    {{product?.description}}
+  </div>
+</div>
