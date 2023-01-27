@@ -1,10 +1,5 @@
 Sample Web application: [https://psinha6.github.io/result-list-angular](https://psinha6.github.io/result-list-angular)
 
-
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
 # ResultListAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
